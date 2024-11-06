@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default Drag and Drop Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        #dropzone {
+            border: 2px dashed #ccc;
+            border-radius: 4px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        #dropzone.dragover {
+            background-color: #e9ecef;
+            border-color: #4CAF50;
+        }
+
+        .instructions {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            display: none;
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h1>Drag and Drop Demo</h1>
+        <p>Try dragging files onto this page. Files can only be dropped in the designated drop zone below.</p>
+    </div>
+
+    <div id="dropzone">
+        Drop files here
+    </div>
+
+    <div id="success" class="success-message">
+        File dropped successfully in the designated zone!
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
